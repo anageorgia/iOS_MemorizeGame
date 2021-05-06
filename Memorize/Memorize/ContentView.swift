@@ -14,6 +14,7 @@ struct ContentView: View {
                 CardView(isFaceUP: false)
             }
         }
+            // proprieties of the ContentView
             .padding()
             .foregroundColor(Color.orange)
             .font(Font.largeTitle)
