@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         HStack {
             ForEach(0..<4) { index in
-                CardView(isFaceUP: false)
+                CardView(isFaceUp: false)
             }
         }
             // proprieties of the ContentView
@@ -22,11 +22,11 @@ struct ContentView: View {
 }
 
 struct CardView: View {
-    var isFaceUP: Bool
+    var isFaceUp: Bool
     
     var body: some View {
         ZStack {
-            if isFaceUP {
+            if isFaceUp {
                 RoundedRectangle(cornerRadius: 10.0).fill(Color.white) // Game background
                 RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3.0) // Card background
                 Text("👻")
